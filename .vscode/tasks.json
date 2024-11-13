@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Iniciar Odoo con entorno virtual",
+            "type": "shell",
+            "command": ".\\venv\\Scripts\\Activate.ps1; python odoo-bin -c odoo.conf",
+            "problemMatcher": [],
+            "group": "build",
+            "options": {
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command"]
+                }
+            }
+        },
+        {
+            "label": "Actualizar Modulo",
+            "type": "shell",
+            "command": "python odoo-bin -c odoo.conf -u electronic_fiscal",
+            "problemMatcher": []
+        }
+    ]
+}
+
+
+
+

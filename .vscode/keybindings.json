@@ -1,0 +1,13 @@
+[
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Iniciar Odoo con entorno virtual"
+    }
+    
+ ]
+ 
