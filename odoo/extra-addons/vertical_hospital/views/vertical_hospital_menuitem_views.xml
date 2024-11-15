@@ -1,0 +1,6 @@
+<odoo>
+    <menuitem id="vertical_hospital_menu" name="Hospital" web_icon="vertical_hospital,static/description/hospital.png">
+        <menuitem id="patients_menu" name="Pacientes" action="vertical_hospital_patients_action" sequence="1"/>
+        <menuitem id="treatments_menu" name="Tratamientos" action="vertical_hospital_treatments_action" sequence="2"/>
+    </menuitem>
+</odoo>

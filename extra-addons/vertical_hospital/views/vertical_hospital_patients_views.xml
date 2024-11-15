@@ -1,0 +1,70 @@
+<odoo>
+
+    <record id="vertical_hospital_patients_form" model="ir.ui.view">
+        <field name="name">vertical.hospital.patients.form</field>
+        <field name="model">vertical.hospital.patients</field>
+        <field name="arch" type="xml">
+            <form string="Formulario de pacientes">
+                <header>
+                    <button name="action_set_active" type="object" string="Alta"
+                                class="oe_highlight"/>
+
+                    <button name="action_set_inactive" type="object" string="Baja"
+                            class="oe_highlight"/>
+
+                    <field name="state" widget="statusbar" statusbar_visible="borrador,alta,baja"/>
+                </header>
+
+                <sheet>
+                    <group>
+                        <field name="patient_code"/>
+                        <field name="full_name"/>
+                        <field name="patient_rnc"/>
+                        <field name="treatments_performed"  options="{'no_create': True, 'no_open': True}"/>
+                        <field name="date_discharge"/>
+                        <field name="update_date"/>
+
+                    </group>
+
+                </sheet>
+
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="vertical_hospital_patient_sequence" model="ir.sequence">
+        <field name="name">Secuencia de pacientes</field>
+        <field name="code">vertical.hospital.patients.sequence</field>
+        <field name="prefix">PA</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field> 
+    </record>
+
+    <record id="vertical_hospital_patients_tree" model="ir.ui.view">
+        <field name="name">vertical.hospital.patients.tree</field>
+        <field name="model">vertical.hospital.patients</field>
+        <field name="arch" type="xml">
+            <tree string="Listado de pacientes">
+
+                <field name="patient_code"/>
+                <field name="full_name"/>
+                <field name="patient_rnc"/>
+                <field name="state"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="vertical_hospital_patients_action" model="ir.actions.act_window">
+        <field name="name">Pacientes</field>
+        <field name="res_model">vertical.hospital.patients</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

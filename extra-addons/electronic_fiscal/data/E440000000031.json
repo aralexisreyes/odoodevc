@@ -1,0 +1,32 @@
+{
+    "datos_comprobante": {
+        "EcfName": "Regímenes Especiales Electrónico",
+        "TipoEcf": "44",
+        "Encf": "E440000000031",
+        "FechaVencimientoSecuencia": "31-12-2025",
+        "TipoIngresos": "01",
+        "TipoPago": "1"
+    },
+    "comprador": {
+        "RNCComprador": "132118855",
+        "RazonSocialComprador": "FUNDACIÓN CIDCA"
+    },
+    "totales": {
+        "MontoTotal": "34000.00",
+        "MontoExento": "34000.00"
+    },
+    "datos_adicionales": {
+        "FechaEmision": "10-11-2024"
+    },
+    "items": {
+        "1": {
+            "NombreItem": "Consultoria de datos",
+            "NumeroSecuencia": "1",
+            "IndicadorFacturacion": "4",
+            "CantidadItem": "1",
+            "PrecioUnitarioItem": "34000.00",
+            "MontoItem": "34000.00",
+            "IndicadorBienOServicio": "2"
+        }
+    }
+}

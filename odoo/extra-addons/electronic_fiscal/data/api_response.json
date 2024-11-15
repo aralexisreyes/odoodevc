@@ -1,0 +1,19 @@
+{
+    "customer": "FUNDACIÓN CIDCA",
+    "tipo_ecf": "Comprobante Electrónico para Regímenes Especiales ",
+    "totalitbis": null,
+    "total_amount": "40120.00",
+    "codigo": "2",
+    "encf": "E440000000032",
+    "estado": "Rechazado",
+    "fecharecepcion": "11/10/2024 9:26:45 PM",
+    "mensajes": [
+        {
+            "codigo": 244,
+            "valor": "Los comprobantes tipo 44 solo permiten indicador de facturación exento y no facturable."
+        }
+    ],
+    "rnc": "132797124",
+    "secuenciautilizada": true,
+    "trackid": "908770ea-3e08-4b38-ace4-e97d7ed167db"
+}

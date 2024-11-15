@@ -1,0 +1,62 @@
+<odoo>
+    <record id="view_electronic_fiscal_management_tree" model="ir.ui.view">
+        <field name="name">electronic.fiscal.management.tree</field>
+        <field name="model">electronic.fiscal.management</field>
+        <field name="arch" type="xml">
+            <tree string="Client List" create="false" edit="false" delete="false">
+                <field name="user_id"/>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="request_count"/>
+                <field name="status"
+                       decoration-success="status == 'active'"
+                       decoration-danger="status == 'inactive'"
+                />
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_electronic_fiscal_management_form" model="ir.ui.view">
+        <field name="name">electronic.fiscal.management.form</field>
+        <field name="model">electronic.fiscal.management</field>
+        <field name="arch" type="xml">
+            <form string="Electronic Fiscal Management" create="false" edit="false" delete="false">
+                <sheet>
+                <group>
+                    <field name="user_id"/>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="status"
+                           decoration-success="status == 'active'"
+                           decoration-danger="status == 'inactive'"
+                    />
+                    <field name="date_created"/>
+                </group>
+                <group string="Usage Statistics">
+                    <field name="request_count"/>
+                    <field name="last_request_date"/>
+                    <field name="avg_requests_per_day"/>
+                </group>
+                <group string="Security">
+                    <field name="auth_token"/>
+                    <field name="token_expiry_date"/>
+                </group>
+                <group string="Configuration">
+                    <field name="additional_settings"/>
+                </group>
+                <group string="Audit">
+                    <field name="account_status"/>
+                </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_electronic_fiscal_management" model="ir.actions.act_window">
+        <field name="name">Electronic fiscal management</field>
+        <field name="res_model">electronic.fiscal.management</field>
+        <field name="view_mode">tree,form</field> <!-- Permitir ver tanto árbol como formulario -->
+    </record>
+
+</odoo>

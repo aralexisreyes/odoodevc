@@ -1,0 +1,56 @@
+<odoo>
+    <record id="res_config_settings_dgii" model="ir.ui.view">
+        <field name="name">res.config.settings.dgii.settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="90"/>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//form" position="inside">
+            <app data-string="DGII" string="DGII" name="dgii_settings" logo="/electronic_fiscal/static/description/electronic_fiscal.png">
+                <block title="Certification" name="dgii_certification_settings" invisible="not is_root_company">
+
+                  <setting string="Select your environment" help="Select the environment for issuing ecf">
+                    <div class="setting_ecf_environment">
+                      <field name="ecf_environment"/>
+                    </div>
+                  </setting>
+                </block>
+
+                <block title="Set up registration data to validate ecf" name="dgii_issuer_settings" invisible="not is_root_company">
+
+                  <setting string="Assigned access token" help="API access token (Automatic)">
+                    <div class="setting_ecf_token">
+                      <field name="token_api"/>
+                    </div>
+                  </setting>
+
+                  <setting string="Issuing company" help="Select the company to issue and validate ecf">
+                    <div class="setting_ecf_company_data">
+                      <field name="company_data"/>
+                    </div>
+                  </setting>
+
+                  <setting string="Authorization code" help="Enter your authorization code to register your company">
+                    <div class="setting_ecf_autorization_code">
+                      <field name="autorization_code"/>
+                    </div>
+                  </setting>
+
+                  <setting string="Key p12" help="Enter your certificate private key for digital signature">
+                    <div class="setting_ecf_password_p12">
+                      <field name="password_p12"/>
+                    </div>
+                  </setting>
+
+                  <setting string="Digital certificate" help="Attach your certificate for digital signature">
+                    <div class="setting_ecf_certificate_p12">
+                      <field name="certificate_p12"/>
+                    </div>
+                  </setting>
+
+                </block>
+            </app>
+          </xpath>
+        </field>
+    </record>
+</odoo>

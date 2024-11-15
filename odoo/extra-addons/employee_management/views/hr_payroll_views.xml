@@ -1,0 +1,16 @@
+<odoo>
+
+    <record id="view_employee_form_inherit_loan" model="ir.ui.view">
+        <field name="name">employee.form.inherit.loan</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/notebook/page[@name='hr_settings']" position="inside">
+                <group name="employee_loan">
+                    <field name="loan_id" widget="many2one" context="{'form_view_ref':'view_employee_loan_form'}" string="Loan"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+

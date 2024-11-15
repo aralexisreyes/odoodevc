@@ -1,0 +1,42 @@
+<odoo>
+    <record id="vertical_hospital_treatments_form" model="ir.ui.view">
+        <field name="name">vertical.hospital.treatments.form</field>
+        <field name="model">vertical.hospital.treatments</field>
+        <field name="arch" type="xml">
+            <form string="Formulario de tratamientos">
+                <sheet>
+                    <group>
+                        <field name="treatment_code"/>
+                        <field name="treatment_name"/>
+                        <field name="treating_doctor"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="vertical_hospital_treatments_sequence" model="ir.sequence">
+        <field name="name">Secuencia de tratamientos</field>
+        <field name="code">vertical.hospital.treatments.sequence</field>
+        <field name="padding">3</field>
+        <field name="number_next">1</field>
+    </record>
+
+    <record id="vertical_hospital_treatments_tree" model="ir.ui.view">
+        <field name="name">vertical.hospital.treatments.tree</field>
+        <field name="model">vertical.hospital.treatments</field>
+        <field name="arch" type="xml">
+            <tree string="Listado de tratamientos">
+                <field name="treatment_code"/>
+                <field name="treatment_name"/>
+                <field name="treating_doctor"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="vertical_hospital_treatments_action" model="ir.actions.act_window">
+        <field name="name">Tratamientos</field>
+        <field name="res_model">vertical.hospital.treatments</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

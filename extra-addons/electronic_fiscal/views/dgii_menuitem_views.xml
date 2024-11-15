@@ -1,0 +1,11 @@
+<odoo>
+
+<menuitem id="menu_dgii" name="DGII" web_icon='electronic_fiscal,static/description/electronic_fiscal.png'>
+
+    <menuitem id="menu_ecf_records" name="Validations"  
+            action="action_ecf_records_tree" sequence="2">
+    </menuitem>
+
+</menuitem>
+
+</odoo>

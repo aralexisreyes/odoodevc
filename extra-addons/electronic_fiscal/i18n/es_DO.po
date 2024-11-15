@@ -1,0 +1,451 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* electronic_fiscal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e-20241003\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-11 02:21+0000\n"
+"PO-Revision-Date: 2024-11-11 02:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_res_config_settings__token_api
+msgid "API Access Token"
+msgstr "Token de acceso a la API"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "API access token (Automatic)"
+msgstr "Token de acceso a la api (Automático)"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__ecf_records__status__aceptado
+msgid "Accepted"
+msgstr "Aceptado"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__total_amount
+msgid "Amount Total"
+msgstr "Monto total"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/dgii_settings.py:0
+#: code:addons/models/dgii_settings.py:0
+#, python-format
+msgid "An error has occurred: %s"
+msgstr "Ha ocurrido un error: %s"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Assigned access token"
+msgstr "Token de acceso asignado"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Attach your certificate for digital signature"
+msgstr "Adjunte su certificado para firma digital"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_res_config_settings__autorization_code
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Authorization code"
+msgstr "Código de autorización"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_bank_statement_line__ecf_environment
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_move__ecf_environment
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_payment__ecf_environment
+msgid "Billing environment"
+msgstr "Entorno de Facturación"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_res_config_settings__password_p12
+msgid "Certificate password"
+msgstr "Clave del certificado"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Certification"
+msgstr "Certificación"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__account_move__ecf_environment__certificacion
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__res_config_settings__ecf_environment__certificacion
+msgid "Certification environment"
+msgstr "Entorno de certificación"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_res_config_settings__company_data
+msgid "Company"
+msgstr "Compañía"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__ecf_records__status__aceptado_condicional
+msgid "Conditionally Accepted"
+msgstr "Aceptado Condicional"
+
+#. module: electronic_fiscal
+#: model:ir.model,name:electronic_fiscal.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/dgii_settings.py:0
+#: code:addons/models/dgii_settings.py:0
+#, python-format
+msgid "Connection error when trying to send data to the API: %s"
+msgstr "Error de conexión al intentar enviar datos a la API: %s"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/account_move.py:0
+#: code:addons/models/account_move.py:0
+#, python-format
+msgid "Connection error when trying to send the ecf to the API: %s"
+msgstr "Error de conexión al intentar enviar el ecf a la API: %s"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__create_date
+msgid "Created on"
+msgstr "creado en"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__customer
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: electronic_fiscal
+#: model:ir.ui.menu,name:electronic_fiscal.menu_dgii
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "DGII"
+msgstr ""
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__ecf_message
+msgid "DGII message"
+msgstr "Mensaje de la DGII"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.invoice_document_inherit
+msgid "Digital Signature Date:"
+msgstr "Fecha de firma digital:"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_res_config_settings__certificate_p12
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Digital certificate"
+msgstr "Certificado digital"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__ecf_number
+msgid "Ecf"
+msgstr ""
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_res_config_settings__ecf_environment
+msgid "Ecf Environment"
+msgstr "Entorno de Ecf"
+
+#. module: electronic_fiscal
+#: model:ir.model,name:electronic_fiscal.model_ecf_records
+msgid "Ecf Records"
+msgstr "Registros de ecf"
+
+#. module: electronic_fiscal
+#: model:ir.actions.act_window,name:electronic_fiscal.action_ecf_records_tree
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.view_ecf_records_form
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.view_ecf_records_tree
+msgid "Ecf Sent"
+msgstr "Ecf enviados"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_bank_statement_line__status
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_move__status
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_payment__status
+msgid "Ecf status"
+msgstr "Estado del Ecf"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/ecf_data.py:0
+#: code:addons/models/ecf_data.py:0
+#, python-format
+msgid "Ecf type E44 cannot contain ITBIS"
+msgstr "Ecf tipo E44 no puede contener ITBIS"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Enter your authorization code to register your company"
+msgstr "Ingrese su código de autorización para registrar su empresa"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Enter your certificate private key for digital signature"
+msgstr "Ingrese la clave privada de su certificado para la firma digital"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/dgii_settings.py:0
+#: code:addons/models/dgii_settings.py:0
+#, python-format
+msgid "Error sending data to API: %s"
+msgstr "Error al enviar datos a API: %s"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/account_move.py:0
+#: code:addons/models/account_move.py:0
+#, python-format
+msgid "Error sending ecf to API: %s"
+msgstr "Error al enviar ecf a API: %s"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/account_move.py:0
+#: code:addons/models/account_move.py:0
+#, python-format
+msgid "Error writing file: %s"
+msgstr "Error al escribir el archivo: %s"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__id
+msgid "ID"
+msgstr ""
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__tax
+msgid "ITBIS"
+msgstr ""
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/account_move.py:0
+#: code:addons/models/account_move.py:0
+#, python-format
+msgid "Information"
+msgstr "Información"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Issuing company"
+msgstr "Empresa emisora"
+
+#. module: electronic_fiscal
+#: model:ir.model,name:electronic_fiscal.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Key p12"
+msgstr "Clave p12"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__write_date
+msgid "Last Updated on"
+msgstr "Actualizado por última vez en"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/account_move.py:0
+#: code:addons/models/account_move.py:0
+#, python-format
+msgid "No status has been received from the DGII, messages: %s"
+msgstr "No se ha recibido estado de la DGII, mensajes: %s"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/ecf_data.py:0
+#: code:addons/models/ecf_data.py:0
+#, python-format
+msgid "Product '%s' has more than one ITBIS tax applied. You can only have one ITBIS tax."
+msgstr "EL producto '%s' tiene más de un impuesto ITBIS. Sólo puede tener un impuesto ITBIS."
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/ecf_data.py:0
+#: code:addons/models/ecf_data.py:0
+#, python-format
+msgid "Product '%s' has more than one withholding (27%) applied. You can only have one"
+msgstr "El producto '%s' tiene más de una retención (27%). Sólo puede tener una"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__account_move__ecf_environment__produccion
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__res_config_settings__ecf_environment__produccion
+msgid "Production environment"
+msgstr "Entorno de producción"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_bank_statement_line__qr_code
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_move__qr_code
+msgid "QR Code"
+msgstr "Código QR"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_bank_statement_line__url_qr
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_move__url_qr
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_payment__url_qr
+msgid "QR Code URL"
+msgstr "URL del código QR"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.invoice_document_inherit
+msgid "QR code"
+msgstr "Código qr"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__ecf_records__status__rechazado
+msgid "Refused"
+msgstr "Rechazado"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_bank_statement_line__security_code
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_move__security_code
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_payment__security_code
+msgid "Security code"
+msgstr "Código de seguridad"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.invoice_document_inherit
+msgid "Security code:"
+msgstr "Código de seguridad:"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Select the company to issue and validate ecf"
+msgstr "Seleccione la empresa para emitir y validar ecf"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Select the environment for issuing ecf"
+msgstr "Seleccione el entorno para emitir ecf"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Select your environment"
+msgstr "Selecciona tu entorno"
+
+#. module: electronic_fiscal
+#: model_terms:ir.ui.view,arch_db:electronic_fiscal.res_config_settings_dgii
+msgid "Set up registration data to validate ecf"
+msgstr "Configurar datos de registro para validar ecf"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_bank_statement_line__signature_date
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_move__signature_date
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_payment__signature_date
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__signature_date
+msgid "Signature date"
+msgstr "Fecha de firma"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__status
+msgid "Status"
+msgstr "Estado"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__account_move__ecf_environment__pruebas
+#: model:ir.model.fields.selection,name:electronic_fiscal.selection__res_config_settings__ecf_environment__prueba
+msgid "Test environment"
+msgstr "Entorno de pruebas"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/dgii_settings.py:0
+#: code:addons/models/dgii_settings.py:0
+#, python-format
+msgid "The authorization code is invalid, please try again."
+msgstr "El código de autorización no es válido, inténtalo de nuevo."
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/account_move.py:0
+#: code:addons/models/account_move.py:0
+#, python-format
+msgid "The ecf has been conditionally accepted, message: %s"
+msgstr "El ecf ha sido aceptado condicionalmente, mensaje: %s"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/ecf_data.py:0
+#: code:addons/models/ecf_data.py:0
+#, python-format
+msgid "The ecf type E46 must have itbis of 0% (Not billable)"
+msgstr "El ecf tipo E46 debe tener itbis del 0% (No facturable)"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_bank_statement_line__validated_ecf
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_move__validated_ecf
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_payment__validated_ecf
+msgid "Validated Ecf"
+msgstr "Ecf validado"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__environment_records
+msgid "Validation environment"
+msgstr "Entorno de validación"
+
+#. module: electronic_fiscal
+#: model:ir.ui.menu,name:electronic_fiscal.menu_ecf_records
+msgid "Validations"
+msgstr "Validaciones"
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/dgii_settings.py:0
+#: code:addons/models/dgii_settings.py:0
+#, python-format
+msgid "You must provide your authorization code to register data in the API."
+msgstr "Debe proporcionar su código de autorización para registrar datos en la API."
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/dgii_settings.py:0
+#: code:addons/models/dgii_settings.py:0
+#, python-format
+msgid "You must provide your certificate private key to register the data."
+msgstr "Debe proporcionar la clave privada de su certificado para registrar los datos."
+
+#. module: electronic_fiscal
+#. odoo-python
+#: code:addons/electronic_fiscal/models/dgii_settings.py:0
+#: code:addons/models/dgii_settings.py:0
+#, python-format
+msgid "You must select a company to send the data."
+msgstr "Debe seleccionar una empresa para enviar los datos."
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_ecf_records__ecf_type
+msgid "ecf Type"
+msgstr "Tipo de ecf"
+
+#. module: electronic_fiscal
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_bank_statement_line__ecf_record_id
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_move__ecf_record_id
+#: model:ir.model.fields,field_description:electronic_fiscal.field_account_payment__ecf_record_id
+msgid "ecf record"
+msgstr "Registro de ecf"

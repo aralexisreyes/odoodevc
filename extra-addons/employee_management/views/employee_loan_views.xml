@@ -1,0 +1,47 @@
+<odoo>
+    <!-- Definición de la acción -->
+    <record id="action_employee_loan" model="ir.actions.act_window">
+        <field name="name">Prestamos</field>
+        <field name="res_model">hr.employee.loan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Definición de la vista de formulario -->
+    <record id="view_employee_loan_form" model="ir.ui.view">
+        <field name="name">employee.loan.form</field>
+        <field name="model">hr.employee.loan</field>
+        <field name="arch" type="xml">
+            <form string="Prestamo de empleado">
+                <sheet>
+                    <group>
+                        <field name="employee_id"/>
+                        <field name="loan_amount"/>
+                        <field name="deduction_amount"/>
+                        <field name="total_installments"/>
+                        <field name="current_installment" readonly="1"/>
+                        <field name="remaining_amount" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Definición de la vista de lista -->
+    <record id="view_employee_loan_tree" model="ir.ui.view">
+        <field name="name">employee.loan.tree</field>
+        <field name="model">hr.employee.loan</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Loans">
+                <field name="employee_id"/>
+                <field name="loan_amount"/>
+                <field name="deduction_amount"/>
+                <field name="total_installments"/>
+                <field name="current_installment"/>
+                <field name="remaining_amount"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Definición del menú -->
+    <menuitem id="menu_employee_loan" name="Prestamos" parent="hr.menu_hr_root" action="action_employee_loan"/>
+</odoo>

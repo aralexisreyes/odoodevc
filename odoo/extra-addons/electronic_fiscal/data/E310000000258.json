@@ -1,0 +1,55 @@
+{
+    "datos_comprobante": {
+        "EcfName": "Factura de Crédito Fiscal Electrónica",
+        "TipoEcf": "31",
+        "Encf": "E310000000258",
+        "FechaVencimientoSecuencia": "31-12-2025",
+        "IndicadorMontoGravado": "01",
+        "TipoIngresos": "01",
+        "TipoPago": "1"
+    },
+    "comprador": {
+        "RNCComprador": "101618787",
+        "RazonSocialComprador": "Altice Dominicana"
+    },
+    "totales": {
+        "MontoTotal": "2361.18",
+        "MontoGravadoTotal": "2001.00",
+        "MontoGravadoI1": "2001.00",
+        "ITBIS1": "18",
+        "TotalITBIS1": "360.18",
+        "TotalITBIS": "360.18"
+    },
+    "datos_adicionales": {
+        "FechaEmision": "10-11-2024"
+    },
+    "items": {
+        "1": {
+            "NombreItem": "Pagina Web",
+            "NumeroSecuencia": "1",
+            "IndicadorFacturacion": "1",
+            "CantidadItem": "1",
+            "PrecioUnitarioItem": "1500.00",
+            "MontoItem": "1500.00",
+            "IndicadorBienOServicio": "2"
+        },
+        "2": {
+            "NombreItem": "Mantenimiento",
+            "NumeroSecuencia": "2",
+            "IndicadorFacturacion": "1",
+            "CantidadItem": "1",
+            "PrecioUnitarioItem": "1.00",
+            "MontoItem": "1.00",
+            "IndicadorBienOServicio": "1"
+        },
+        "3": {
+            "NombreItem": "Pagina Web",
+            "NumeroSecuencia": "3",
+            "IndicadorFacturacion": "1",
+            "CantidadItem": "1",
+            "PrecioUnitarioItem": "500.00",
+            "MontoItem": "500.00",
+            "IndicadorBienOServicio": "2"
+        }
+    }
+}

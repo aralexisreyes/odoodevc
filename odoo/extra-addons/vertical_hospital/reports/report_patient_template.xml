@@ -1,0 +1,34 @@
+<odoo>
+    <template id="report_patient_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2 style="margin-bottom: 40px">Reporte de pacientes</h2>
+                    <table class="table table-sm">
+
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nombre</th>
+                                <th>RNC</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <t t-foreach="docs" t-as="patient">
+                                <tr>
+                                    <td style="text-align: center;"><span t-esc="patient.patient_code"/></td>
+                                    <td style="text-align: center;"><span t-esc="patient.full_name"/></td>
+                                    <td style="text-align: center;"><span t-esc="patient.patient_rnc"/></td>
+                                    <td style="text-align: center;"><span t-esc="patient.state"/></td>
+
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

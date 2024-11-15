@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_report_patient" model="ir.actions.report">
+        <field name="name">Reporte de Pacientes</field>
+        <field name="model">vertical.hospital.patients</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">vertical_hospital.report_patient_template</field>
+
+    </record>
+</odoo>

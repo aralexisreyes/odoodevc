@@ -1,0 +1,64 @@
+<odoo>
+
+    <!-- Vista de formulario para los reportes en contabilidad -->
+    <record id="view_ecf_records_form" model="ir.ui.view">
+        <field name="name">ecf.records.form</field>
+        <field name="model">ecf.records</field>
+        <field name="arch" type="xml">
+            <form string="Ecf Sent" create="false" edit="false" delete="false">
+                <sheet>   
+
+                    <group>
+                        <field name="ecf_number" readonly="1"/>
+                        <field name="signature_date" readonly="1"/>
+                        <field name="ecf_type" readonly="1"/>
+                        <field name="customer" readonly="1"/>
+                        <field name="tax" readonly="1"/>
+                        <field name="total_amount" readonly="1"/>
+                        <field name="status" 
+                               readonly="1"
+                               decoration-success="status == 'Aceptado'"    
+                               decoration-warning="status == 'Aceptado Condicional'" 
+                               decoration-danger="status == 'Rechazado'"/> 
+                        <field name="environment_records"
+                                decoration-success="environment_records == 'produccion'"    
+                                decoration-warning="environment_records == 'prueba' or environment_records == 'certificacion'"/>
+                        <field name="ecf_message"/>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista de árbol para los reportes en contabilidad -->
+    <record id="view_ecf_records_tree" model="ir.ui.view">
+        <field name="name">ecf.records.tree</field>
+        <field name="model">ecf.records</field>
+        <field name="arch" type="xml">
+            <tree string="Ecf Sent" create="false">
+
+                <field name="ecf_number"/>
+                <field name="signature_date"/>
+                <field name="ecf_type"/>
+                <field name="customer"/>
+                <field name="tax"/>
+                <field name="total_amount"/>
+
+                <field name="status" 
+                            decoration-success="status == 'Aceptado'"    
+                            decoration-warning="status == 'Aceptado Condicional'" 
+                            decoration-danger="status == 'Rechazado'"/> 
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción para abrir la vista de árbol y formulario de reportes en contabilidad -->
+    <record id="action_ecf_records_tree" model="ir.actions.act_window">
+        <field name="name">Ecf Sent</field>
+        <field name="res_model">ecf.records</field>
+        <field name="view_mode">tree,form</field> <!-- Permitir ver tanto árbol como formulario -->
+    </record>
+
+
+</odoo>

@@ -1,0 +1,21 @@
+<odoo>
+    <!-- <record id="res_config_settings_dgii" model="ir.ui.view">
+        <field name="name">res.config.management.settings</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="90"/>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//form" position="after">
+                <block title="User traking" name="electronic_fiscal_management_settings" invisible="not is_root_company">
+
+                  <setting string="Request count per user">
+                    <div class="setting_request_count">
+                      <field name="request_count"/>
+                    </div>
+                  </setting>
+
+                </block>
+          </xpath>
+        </field>
+    </record> -->
+</odoo>

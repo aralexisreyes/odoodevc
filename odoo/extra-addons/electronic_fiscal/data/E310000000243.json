@@ -1,0 +1,40 @@
+{
+    "datos_comprobante": {
+        "EcfName": "Factura de Crédito Fiscal Electrónica",
+        "TipoEcf": "31",
+        "Encf": "E310000000243",
+        "FechaVencimientoSecuencia": "31-12-2025",
+        "IndicadorMontoGravado": "01",
+        "TipoIngresos": "01",
+        "TipoPago": "1"
+    },
+    "comprador": {
+        "RNCComprador": "101618787",
+        "RazonSocialComprador": "Altice Dominicana"
+    },
+    "totales": {
+        "MontoTotal": "15661.18",
+        "MontoGravadoTotal": "13501.00",
+        "MontoGravadoI1": "12001.00",
+        "ITBIS1": "18",
+        "TotalITBIS1": "2160.18",
+        "MontoGravadoI3": "1500.00",
+        "ITBIS3": "0",
+        "TotalITBIS3": "0.00",
+        "TotalITBIS": "2160.18"
+    },
+    "datos_adicionales": {
+        "FechaEmision": "10-11-2024"
+    },
+    "items": {
+        "3": {
+            "NombreItem": "Pagina Web",
+            "NumeroSecuencia": "3",
+            "IndicadorFacturacion": "1",
+            "CantidadItem": "1",
+            "PrecioUnitarioItem": "12000.00",
+            "MontoItem": "12000.00",
+            "IndicadorBienOServicio": "2"
+        }
+    }
+}

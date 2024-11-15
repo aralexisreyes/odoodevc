@@ -1,0 +1,16 @@
+<odoo>
+
+<record id="vertical_hospital_patients_tree_inherit" model="ir.ui.view">
+    <field name="name">vertical.hospital.patients.tree.inherit</field>
+    <field name="model">vertical.hospital.patients</field>
+    <field name="inherit_id" ref="vertical_hospital_patients_tree"/>
+    <field name="arch" type="xml">
+        <xpath expr="//tree">
+            <header>
+                <button name="%(action_report_patient)d" type="action" string="Generar Reporte" class="oe_highlight"/>
+            </header>
+        </xpath>
+    </field>
+</record>
+
+</odoo>

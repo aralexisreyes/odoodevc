@@ -1,0 +1,12 @@
+<odoo>
+    <!-- <record id="rule_employee_loan" model="hr.salary.rule">
+        <field name="name">Loan Deduction</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = employee.loan_id and employee.loan_id.remaining_amount > 0</field>
+        <field name="amount_select">fix</field>
+        <field name="amount_fix">employee.loan_id.deduction_amount</field>
+        <field name="sequence">100</field>
+        <field name="appears_on_payslip">True</field>
+    </record> -->
+</odoo>

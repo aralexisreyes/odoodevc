@@ -1,0 +1,63 @@
+<odoo>
+
+    <!-- Vista de formulario para el reporte TSS -->
+    <record id="view_employee_tss_form" model="ir.ui.view">
+        <field name="name">employee.tss.form</field>
+        <field name="model">hr.employee.tss</field>
+        <field name="arch" type="xml">
+            <form string="TSS">
+                <sheet>
+                    <group>
+                        <field name="tss_type"/>
+                        <field name="payroll_batch"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                    </group>
+                    <group>
+                        <button name="generate_tss_excel"
+                                type="object"
+                                string="Generar Reporte TSS (Excel)"
+                                class="btn-primary"
+                                style="padding: 5px 10px; font-size: 14px;"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Acción para abrir la lista de reportes de TSS -->
+    <record id="action_employee_tss" model="ir.actions.act_window">
+        <field name="name">Reportes de TSS</field>
+        <field name="res_model">hr.employee.tss</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <!-- Menú para acceder a la lista de reportes de TSS -->
+    <menuitem id="menu_employee_tss" 
+              name="Reportes TSS" 
+              parent="hr.hr_menu_hr_reports" 
+              action="action_employee_tss"/>
+
+</odoo>
+
+
+             
+                        <!-- <button name="generate_tss_excel"
+                                type="object"
+                                string="Generar Reporte TSS (Excel)"
+                                class="btn-primary"
+                                context="{'form_view_initial_mode': 'edit'}"/>
+                        <button name="generate_tss_pdf"
+                                type="object"
+                                string="Generar Reporte TSS (PDF)";
+                                class="btn-primary"
+                                context="{'form_view_initial_mode': 'edit'}"/>
+
+ -->
+
+
+
+
+
+
+

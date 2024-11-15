@@ -1,0 +1,54 @@
+<!-- Creamos la vista xml para insertar el codigo QR, codigo de seguridad
+y fecha de la firma digital en las facturas entrantes y salientes -->
+
+<odoo>
+    <template id="invoice_document_inherit" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@id='right-elements']/.." position="after">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <t t-if="o.qr_code"> <!-- Verifica si existe el QR code -->
+                        <!-- Muestra la imagen del QR code -->
+                        <img t-att-src="'data:image/png;base64,' + o.qr_code.decode('utf-8')" alt="QR code" style="width: 150px; height: 150px;" />
+                    </t>
+
+                    <!-- Añadir un espacio extra debajo del QR con margen -->
+                    <div style="margin-top: 5px;">
+                        <h6 style="display: inline-block; margin: 0;">Security code:</h6>
+                        <p style="display: inline-block; margin: 0 0 0 5px;">
+                            <t t-esc="o.security_code"/>
+                        </p>
+                    </div>
+
+                    <!-- Fecha firma digital -->
+                <div style="margin-top: 0px;">  <!-- Elimina el margen superior aquí -->
+                    <h6 style="display: inline-block; margin: 0;">Digital Signature Date:</h6>
+                    <p style="display: inline-block; margin: 0 0 0 5px;">
+                        <t t-esc="o.signature_date"/></p>
+                </div>
+
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <record id="view_move_form_inherit_ecf_status" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.ecf_status</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='journal_div']" position="after">
+                <field name="status"
+                    decoration-success="status == 'Aceptado'"
+                    decoration-warning="status == 'Aceptado Condicional'"
+                    decoration-danger="status == 'Rechazado'"/>
+
+                <field name="ecf_environment"
+                    decoration-success="ecf_environment == 'produccion'"    
+                    decoration-warning="ecf_environment == 'prueba' or ecf_environment == 'certificacion'" />
+                
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
+
